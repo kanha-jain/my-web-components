@@ -1,0 +1,91 @@
+body {
+    background-color: #333;
+}
+#animate-text {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* box-sizing: border-box; */
+    padding: 1rem;
+    animation: appear 1000ms ease-in-out 2.1s forwards, disappear 1s ease-in-out 3s   forwards;
+}
+
+@keyframes appear {
+    to {
+        outline: rgba(0, 0, 0, 0.164) solid 100px;
+        background-color: rgb(74, 74, 158);            }
+    }
+
+@keyframes disappear {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#animate-text path:nth-child(1) {
+    stroke-dasharray: 536px;
+    stroke-dashoffset: 536px;
+    animation: animate 2s .1s ease-in-out forwards;
+}
+
+#animate-text path:nth-child(2) {
+    stroke-dasharray: 512.3px;
+    stroke-dashoffset: 512.3px;
+    animation: animate 2s .2s ease-in-out forwards;
+}
+
+#animate-text path:nth-child(3) {
+    stroke-dasharray: 506.4px;
+    stroke-dashoffset: 506.4px;
+    animation: animate 2s .3s ease-in-out forwards;
+}
+
+#animate-text path:nth-child(4) {
+    stroke-dasharray: 422.5px;
+    stroke-dashoffset: 422.5px;
+    animation: animate 2s .4s ease-in-out forwards;
+}
+
+#animate-text path:nth-child(5) {
+    stroke-dasharray: 477.7px;
+    stroke-dashoffset: 477.7px;
+    animation: animate 2s .5s ease-in-out forwards ;
+}
+
+#animate-text path:nth-child(6) {
+    stroke-dasharray: 506.4px;
+    stroke-dashoffset: 506.4px;
+    animation: animate 2s .6s ease-in-out forwards;
+}
+
+#animate-text path:nth-child(7) {
+    stroke-dasharray: 312.4px;
+    stroke-dashoffset: 312.4px;
+    animation: animate 2s .6s ease-in-out forwards;
+}
+
+#animate-text path:nth-child(8) {
+    stroke-dasharray: 506.4px;
+    stroke-dashoffset: 506.4px;
+    animation: animate 2s .6s ease-in-out forwards;
+}
+
+#animate-text path:nth-child(9) {
+    stroke-dasharray: 239.8px;
+    stroke-dashoffset: 239.8px;
+    animation: animate 2s .6s ease-in-out forwards;
+}
+
+#animate-text path:nth-child(10) {
+    stroke-dasharray: 422.5px;
+    stroke-dashoffset: 422.5px;
+    animation: animate 2s .6s ease-in-out forwards;
+}
+
+@keyframes animate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <a href="#myModal" id="modal-open">
+        Open Modal
+    </a>
+    <div class="modal" id="myModal">
+        <div class="modal-body">
+            <div class="modal-title">
+                <h1>Login Form</h1>
+                <a href="#" id="modal-close">&times;</a>
+            </div>
+            <div class="modal-content">
+                <form action="#" method="POST">
+                    <div class="login-username">
+                        <label for="UID">User Name:</label>
+                        <input type="text" name="UID" id="UID">
+                    </div>
+                    <div class="login-password">
+                        <label for="PSW">Password:</label>
+                        <input type="password" name="PSW" id="PSW">
+                    </div>
+                    <div class="login-submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                Some Footer Text.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
